@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockyperp GOON EXP0Z£D iN 4K</title>
+    <style>
+        body {
+            background: black;
+            color: #0F0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px #000;
+            color: #ff0000;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff0000;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            max-width: 800px;
+        }
+        p { color: #fff; line-height: 1.6; }
+        .exposed { font-weight: bold; color: #ff6600; font-size: 1.2em; }
+        .dox { color: #ff0000; font-weight: bold; text-decoration: underline; }
+        .links { margin-top: 20px; }
+        .links a { color: #00f; text-decoration: none; display: block; margin: 5px; font-weight: bold; }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <h1>Blockyperp GOON EXP0Z£D iN 4K</h1>
+    <div class="content">
+        <p>This pathetic individual has been caught impersonating Blockyperp and his girlfriend, stealing domains, and hosting degenerate content.</p>
+        <p class="exposed">THE GOON HAS BEEN CAUGHT.</p>
+        <p>This coward has been busy doxxing innocent people, hijacking their accounts, and nuking their Minecraft and Discord servers. Well, now it's his turn.</p>
+        <p class="dox">NAME: ANTHONY GILLEN</p>
+        <p class="dox">LOCATION: MARQUETTE, MICHIGAN</p>
+        <p>Consider this your final warning. We know exactly who you are, where you live, and every pathetic thing you've done. The internet doesn't forget, and neither do we.</p>
+        
+        <div class="links">
+            <p>TRACK HIS TRASH HERE:</p>
+            <a href="https://discord.gg/your-invite-link" target="_blank">Discord Server</a>
+            <a href="https://youtube.com/@anthonygillen" target="_blank">YouTube Channel</a>
+            <a href="https://pastebin.com/your-dox-link" target="_blank">FULL DOX FILE</a>
+        </div>
+    </div>
+
+    <script>
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+        var matrix = "011001010100110001100101010100110100100101000100";
+        matrix = matrix.split("");
+        var font_size = 10;
+        var columns = c.width / font_size;
+        var drops = [];
+        for(var x = 0; x < columns; x++) drops[x] = 1;
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px arial";
+            for(var i = 0; i < drops.length; i++) {
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+                if(drops[i]*font_size > c.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 35);
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9f0cb6c09a0044d6981ba2b8776adb52","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
